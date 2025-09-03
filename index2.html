@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <title>Ashwini Portfolio</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      min-height: 100vh; /* full page height */
+      padding: 80px 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        
+        <div style="display: flex; justify-content: flex-start; align-items: center; gap: 15px;">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #d9ec0bcc, #7c5f09); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 24px;">
+        A
+      </div>
+      <h2 style="margin: 0; font-size: 24px; font-weight: 600;">Ashwini Bambale</h2>
+    </div>
+      </div>
+      <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#resume">Resume</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+        <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact Us</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+        <img src="main.png" alt="">
+      </div>
+      <div class="content">
+        <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Ashwini</span></h1>
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+             I’m a passionate <b> Software Engineer</b> with hands-on 
+             experience in building full-stack applications and cloud-based solutions. 
+            Recently, I earned my <b>AWS Certified Cloud Practitioner</b> certification, 
+            which strengthened my foundation in cloud computing and modern technologies. 
+            I love turning ideas into scalable, efficient, and impactful software solutions.
+            </p>
+        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+          <a href="https://github.com/ash15225"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ashwini-bambale-016206223/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/AshwiniBamble"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+       <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+        <a href="file:///C:/Users/ashwini/Downloads/CV_2025082121401971.pdf" download="CV_2025082121401971.pdf" style="text-decoration:none;">
+          <button style="background:#4a2c00; color:#fff; padding:12px 25px; border:none; border-radius:6px; cursor:pointer; font-size:1rem;">
+            Download CV
+          </button>
+        </a>
+      </div>
+      
+
+      </div>
+    </div>
+  </section>
+
+ 
+
+<section id="about" style="padding:60px 20px; background:linear-gradient(to right, #fff5ec, #fbd9b6);">
+  <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; gap:40px;">
+    
+    <!-- Left Side: About Info (Moved before the image) -->
+    <div style="flex:2; min-width:300px;">
+      <h2 style="font-size:2rem; margin-bottom:15px; color:#4a2c00;">About Me</h2>
+      <h3 style="font-size:1.3rem; color:#222;">Software Engineer & Full-Stack Developer </h3>
+      <p style="margin:15px 0; font-size:1.05rem; color:#333; line-height:1.6;">
+        I’m <strong>Ashwini Bambale</strong>, a passionate Software Engineer with expertise in developing scalable web 
+        applications and cloud-based solutions. With strong skills in <b>.NET, PHP, Angular, React, SQL</b>, and 
+        <b>AWS Cloud</b>, I enjoy solving complex problems and delivering impactful software solutions. 
+      </p>
+
+      <!-- Personal Details -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; font-size:1rem; margin-top:20px; color:#222;">
+        <p><strong>Birthday:</strong> 15 April 2001</p>
+        <p><strong>Age:</strong> 24</p>
+        <p><strong>Degree:</strong> MSc IT</p>
+        <p><strong>Freelance:</strong> Available</p>
+        <p><strong>Phone:</strong> +91 9004348914</p>
+        <p><strong>Email:</strong> ashwinibambale200@gmail.com</p>
+        <p><strong>City:</strong> Mumbai, India</p>
+        <p><strong>Website:</strong> www.ashwinibambale.com</p>
+      </div>
+
+      <p style="margin-top:20px; font-size:1rem; line-height:1.6; color:#444;">
+        I thrive on continuous learning and adapting to new technologies. Recently, I earned my 
+        <b>AWS Certified Cloud Practitioner</b> certification, which has enhanced my expertise in cloud computing 
+        and modern infrastructure. I am passionate about building solutions that combine efficiency, scalability, and creativity.
+      </p>
+    </div>
+
+    <!-- Right Side: Photo (Moved after the text) -->
+    <div style="flex:1; min-width:280px;">
+      <img src="your-photo.jpg" alt="Ashwini Bambale" style="width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+    </div>
+
+  </div>
+</section>
+
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <p>Below is a visual representation of my core technical skills, along with additional capabilities.</p>
+
+  <div class="skills-circles">
+    <div class="circle-skill">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="progress html" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <text x="18" y="20.35" class="percentage">HTML</text>
+      </svg>
+    </div>
+
+    <div class="circle-skill">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="progress css" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <text x="18" y="20.35" class="percentage">CSS</text>
+      </svg>
+    </div>
+
+    <div class="circle-skill">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="progress js" stroke-dasharray="75, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <text x="18" y="20.35" class="percentage">JS</text>
+      </svg>
+    </div>
+
+    <div class="circle-skill">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="progress php" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <text x="18" y="20.35" class="percentage">PHP</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="skills-details">
+    <h3>Additional Skills & Tools</h3>
+    <ul>
+      <li><strong>Programming & Development:</strong> ASP.NET, ASP.NET Core, .NET Core, C#, ReactJS, Angular, jQuery, Bootstrap</li>
+      <li><strong>Databases:</strong> SQL Server, MySQL, RDS</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, RDS, Lambda, Route 53)</li>
+      <li><strong>Web & API Development:</strong> REST API, Web API</li>
+      <li><strong>Tools & Version Control:</strong> GitHub, Docker, Visual Studio, VS Code</li>
+      <li><strong>AI & Automation:</strong> AI tools, cloud automation, intelligent integrations</li>
+      <li><strong>Soft Skills:</strong> Problem-solving, teamwork, adaptability, communication</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="resume" style="padding:60px 20px; background:linear-gradient(to right, #fff5ec, #fbd9b6); margin-bottom:80px;">
+
+  <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:40px;">
+
+    <!-- Left Column -->
+    <div style="flex:1; min-width:300px;">
+
+      <h2 style="font-size:2rem; font-weight:bold; margin-bottom:20px; color:#4a2c00;">Summary</h2>
+      <h4 style="color:#4a2c00;">Ashwini Maruti Bambale</h4>
+      <p style="font-style:italic; color:#555; margin-bottom:20px; line-height:1.6;">
+        Innovative and results-driven <strong>Software Engineer</strong> skilled in full-stack development and cloud solutions, passionate about creating scalable, efficient, and impactful applications.
+      </p>
+
+      <h2 style="font-size:2rem; font-weight:bold; margin:40px 0 20px; color:#4a2c00;">Education</h2>
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Master of Science in Information Technology</h4>
+        <p style="margin:5px 0; font-weight:bold; color:#222;">2024 – Present</p>
+        <p style="margin:5px 0; font-style:italic; color:#555;">BN Bandodkar College of Science, Thane</p>         
+      </div>
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Bachelor of Science in Information Technology</h4>
+        <p style="margin:5px 0; font-weight:bold; color:#222;">2019 – 2022</p>
+        <p style="margin:5px 0; font-style:italic; color:#555;">BN Bandodkar College of Science, Thane</p>
+       
+      </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div style="flex:2; min-width:300px;">
+
+      <h2 style="font-size:2rem; font-weight:bold; margin-bottom:20px; color:#4a2c00;">Professional Experience</h2>
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Writer Information</h4>
+        <p style="margin:0;"><em>Software Engineer | Jun 2024 – Feb 2025</em></p>
+        
+        <ul style="margin:5px 0 0 20px; color:#333;">
+          <li>Cymmetri an identity and access management (IAM) platform.</li>
+          <li> I have supported Cymmetri based work and also worked on script. I have handled this project for 4 months.</li>
+        </ul>
+        
+      </div>
+
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Portall Infosystem Pvt. Ltd</h4>
+        <p style="margin:0;"><em>Software Developer | Jan 2024 – May 2024</em></p>
+        <ul style="margin:5px 0 0 20px; color:#333;">
+          <li>Worked as Angular Developer & handled Web API development.</li>
+          <li>Contributed to multiple live projects with focus on performance and scalability.</li>
+        </ul>
+      </div>
+
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Dcodetech Industrial Training Pvt. Ltd</h4>
+        <p style="margin:0;"><em>Full Stack Developer Intern | Nov 2022 – May 2023</em></p>
+        <ul style="margin:5px 0 0 20px; color:#333;">
+          <li>I have learned frontend and backend. I have also done practices in live projects in .NET language.</li>
+          <li>I had done library project in asp.net & Also, I had done SQL server school management system using asp.net C# and SQL server.</li>
+        </ul>
+      </div>
+      
+
+
+      <div style="border-left:2px solid #4a2c00; padding-left:15px; margin-bottom:25px;">
+        <h4 style="margin:0; color:#4a2c00;">Dezignolics Web & Software Company</h4>
+        <p style="margin:0;"><em>Program Internship | May 2023</em></p>
+        <ul style="margin:5px 0 0 20px; color:#333;">
+           <li> have created Real Estate Management System in .Net language.</li>
+        </ul>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="services" style="padding:20px 40px; margin-top:60px; background:linear-gradient(to right, #fff5ec, #fbd9b6); text-align:center;">
+
+  <h2 style="font-size:2rem; margin-bottom:20px; color:#4a2c00;">What I Do?</h2>
+  <p style="max-width:700px; margin:0 auto 40px; color:#4a2c00; font-size:1.1rem;">
+    I specialize in crafting modern, scalable, and innovative solutions in software development, cloud computing, and automation.
+  </p>
+
+  <div class="service-list" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:30px; max-width:1100px; margin:0 auto;">
+    
+    <!-- Full Stack Development -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#0099ff; margin-bottom:15px;">💻</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">Full-Stack Development</h3>
+      <p style="color:#555;">Building responsive and scalable web apps using .NET, PHP, Angular, and React.</p>
+    </div>
+
+    <!-- Cloud Solutions -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#ff6600; margin-bottom:15px;">☁️</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">Cloud Solutions</h3>
+      <p style="color:#555;">Deploying applications on AWS (EC2, S3, RDS, Lambda, Route 53) with scalability and security.</p>
+    </div>
+
+    <!-- API Development -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#33cc33; margin-bottom:15px;">🔗</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">API Development</h3>
+      <p style="color:#555;">Designing secure REST APIs and Web APIs for seamless integrations.</p>
+    </div>
+
+    <!-- Database Management -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#cc33ff; margin-bottom:15px;">🗄️</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">Database Management</h3>
+      <p style="color:#555;">Managing SQL Server, MySQL, and AWS RDS with performance optimization.</p>
+    </div>
+
+    <!-- Automation & DevOps -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#ff3366; margin-bottom:15px;">⚙️</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">Automation & DevOps</h3>
+      <p style="color:#555;">Docker, GitHub, and CI/CD pipelines for fast and reliable deployments.</p>
+    </div>
+
+    <!-- AI Integrations -->
+    <div style="background:#f7f5f0; padding:40px 25px; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); transition:0.3s;">
+      <div style="font-size:2rem; color:#00cc99; margin-bottom:15px;">🤖</div>
+      <h3 style="color:#222; font-size:1.3rem; margin-bottom:10px;">AI Integrations</h3>
+      <p style="color:#555;">Using AWS Comprehend, NLP, and AI-powered tools for smarter automation.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- <section id="services" style="padding:50px 20px; margin-top:60px; background:linear-gradient(to right, #fff5ec, #fbd9b6); text-align:center;">
+
+  <h2 style="font-size:2rem; margin-bottom:20px; color:#4a2c00;">What I Do?</h2>
+  <p style="max-width:700px; margin:0 auto 40px; color:#4a2c00; font-size:1.1rem;">
+    As a passionate Software Developer and AWS Cloud Practitioner, I specialize in building scalable applications, 
+    designing cloud-based solutions, and integrating modern technologies to deliver value-driven results.
+  </p>
+
+  <div class="service-list" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; max-width:1100px; margin:0 auto;">
+    
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">Full-Stack Development</h3>
+      <p>Building modern, responsive, and scalable web applications using .NET, PHP, Angular, and React.</p>
+    </div>
+
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">Cloud Solutions</h3>
+      <p>Designing and deploying applications on AWS (EC2, S3, RDS, Lambda, Route 53) with best practices in scalability and security.</p>
+    </div>
+
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">API Development</h3>
+      <p>Creating secure and efficient REST APIs and Web APIs for seamless business integration and communication.</p>
+    </div>
+
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">Database Management</h3>
+      <p>Designing, optimizing, and maintaining SQL Server, MySQL, and AWS cloud databases to ensure performance and reliability.</p>
+    </div>
+
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">Automation & DevOps</h3>
+      <p>Dockerized deployments, version control, and CI/CD pipeline setup for faster and more reliable delivery.</p>
+    </div>
+
+    <div style="background:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:left;">
+      <h3 style="color:#4a2c00;">AI Integrations</h3>
+      <p>Implementing smart solutions using AWS Comprehend, NLP, and AI-driven tools for automation and insights.</p>
+    </div>
+
+  </div>
+</section> -->
+
+
+  <!-- <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ashwinibambale200@gmail.com">ashwinibambale200@gmail.com</a></p>
+    <p>Indeed: <a href="https://profile.indeed.com/p/ashwinibambale">indeed.com/p/ashwinibambale</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashwini-bambale-016206223/">linkedin.com/in/ashwini-bambale-016206223</a></p>
+    <p>GitHub: <a href="https://github.com/ash15225" >github.com/ash15225</a></p>
+  </section> -->
+
+
+
+<section id="contact" class="contact-section" style="padding: 20px 40px; margin-top: 60px; background: linear-gradient(to right, #fff5ec, #fbd9b6); text-align: left;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px; color: #4a2c00;">Contact </h2>
+  <div class="contact-container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+
+    <!-- Left: Info -->
+    <div class="contact-info" style="flex: 1;">
+      <div class="info-box" style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
+        <i class="fas fa-map-marker-alt" style="font-size: 20px; color: #4a2c00;"></i>
+        <div>
+          <h4 style="margin: 0;">Address</h4>
+          <p style="margin: 0;">202 Ganesh Krupa Society, Mulund East, Mumbai – 400081</p>
+        </div>
+      </div>
+
+      <div class="info-box" style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
+        <i class="fas fa-phone-alt" style="font-size: 20px; color: #4a2c00;"></i>
+        <div>
+          <h4 style="margin: 0;">Call Us</h4>
+          <p style="margin: 0;">+91 9004348914</p>
+        </div>
+      </div>
+
+      <div class="info-box" style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
+        <i class="fas fa-envelope" style="font-size: 20px; color: #4a2c00;"></i>
+        <div>
+          <h4 style="margin: 0;">Email Us</h4>
+          <p style="margin: 0;"><a href="mailto:ashwinibambale200@gmail.com">ashwinibambale200@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map-container" style="margin-top: 20px;">
+        <iframe src="https://www.google.com/maps?q=Mulund+East+Mumbai+India&output=embed" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form" style="flex: 1;">
+      <form action="https://formspree.io/f/xjkeaovb" method="POST">
+        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+          <input type="text" name="name" placeholder="Your Name" required style="flex: 1; padding: 10px;">
+          <input type="email" name="email" placeholder="Your Email" required style="flex: 1; padding: 10px;">
+        </div>
+        <input type="text" name="subject" placeholder="Subject" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
+        <textarea name="message" rows="6" placeholder="Message" required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea>
+        <button type="submit" >Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+  <script>
+    function hamburg(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(0px)"
+    }
+    function cancel(){
+      const navbar = document.querySelector(".dropdown")
+      navbar.style.transform = "translateY(-500px)"
+    }
+  </script>
+
+
+
+  <!-- ===== Polished Footer Section ===== -->
+<footer style="background-color: #e0c09e; color: #fff; padding: 20px 20px; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px;">
+
+     <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Social Media Icons -->
+<div style="display: flex; gap: 25px; align-items: center; justify-content: center; padding: 20px;">
+  
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/yourprofile" target="_blank" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/yourusername" target="_blank" style="color: #6f3e09; font-size: 24px;">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://twitter.com/yourhandle" target="_blank" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:your.email@example.com" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- Indeed (Custom Icon Workaround) -->
+  <a href="https://www.indeed.com/your-profile" target="_blank" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fas fa-user-tie"></i> <!-- Placeholder since Indeed has no direct icon -->
+  </a>
+
+  <!-- Personal Website -->
+  <a href="https://yourwebsite.com" target="_blank" style="color:  #6f3e09; font-size: 24px;">
+    <i class="fas fa-globe"></i>
+  </a>
+
+</div>
+
+
+ 
+
+      <!-- Navigation (Right or centered on smaller screens) -->
+      <!-- <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 0; margin: 0;">
+        <li><a href="#home" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Home</a></li>
+        <li><a href="#about" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">About</a></li>
+        <li><a href="#skills" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Skills</a></li>
+        <li><a href="#services" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Services</a></li>
+        <li><a href="#projects" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Projects</a></li>
+        <li><a href="#contact" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Contact</a></li>
+      </ul>
+    </div> -->
+
+    
+
+    <!-- Top: Logo + Name -->
+    <!-- <div style="display: flex; align-items: center; gap: 15px;">
+      <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #c19a4a, #4ea8de); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 22px;">
+        A
+      </div>
+      <h2 style="margin: 0; font-size: 24px; font-weight: 600;">Ashwini Bambale</h2> -->
+    
+
+    <!-- Navigation -->
+    <!-- <ul style="list-style: none; display: flex; justify-content: center; gap: 35px; padding: 0; margin: 0;">
+      <li><a href="#home" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Home</a></li>
+      <li><a href="#about" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">About</a></li>
+      <li><a href="#skills" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Skills</a></li>
+      <li><a href="#services" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Services</a></li>
+      <li><a href="#projects" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Projects</a></li>
+      <li><a href="#contact" style="color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s;">Contact</a></li>
+    </ul>
+    </div> -->
+
+    <!-- Divider Line -->
+    <div style="height: 1px; background-color: #773f0a; margin: 10px 0;"></div>
+
+    <!-- Copyright -->
+    <div style="text-align: center; font-size: 14px; color: #6f3e09;">
+      © 2025 Ashwini Bambale. All Rights Reserved.
+    </div>
+
+    <!-- Developer Credit -->
+    <div style="text-align: center; font-size: 14px; color: #6f3e09;">
+      Developed with <span style="color: #ef4444;">♥</span> by 
+      <a href="https://www.linkedin.com/in/ashwini-bambale-016206223/" style="color: #ef4444; text-decoration: none; font-weight: 500;">Ashwini Bambale</a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
